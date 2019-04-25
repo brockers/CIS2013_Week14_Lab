@@ -27,7 +27,7 @@ int main(){
 		string s = suites[i];
 		for(int j=0;j<13;j++){
 			char v = vals[j];
-			deck[cnt].set_value(j);
+			deck[cnt].set_value(v);
 			deck[cnt].set_suite(s);
 			cnt++;
 		}
@@ -41,8 +41,7 @@ int main(){
 	
 	cout << "Printing our deck of cards:" << endl;
 	for(int i=0;i<52;i++){
-		cout << "Card number " << i << " is a " 
-			<< deck[i].get_value() << " of " << deck[i].get_suite() << endl;
+		cout << deck[i].get_value() << " of " << deck[i].get_suite() << endl;
 	}
 
 	return 0;
