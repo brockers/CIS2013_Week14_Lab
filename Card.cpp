@@ -16,20 +16,14 @@ class Card {
 		
 		void set_weight(char w){ 
 			switch(w){
-					case 'A':
-						weight = 11;
-						break;
-					case 'J':
-						weight = 10;
-						break;
-					case 'Q':
-						weight = 10;
-						break;
-					case 'K':
-						weight = 10;
-						break;
-					default:
-						weight = (int)w;
+				case 'A':
+					weight = 11;
+					break;
+				case 'J' || 'Q' || 'K':
+					weight = 10;
+					break;
+				default:
+					weight = (int)w;
 			}
 		}
 	

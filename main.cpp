@@ -38,6 +38,12 @@ int main(){
 	cout << "(h)it or (s)tay: ";
 	cin >> hOrS;
 	player.set_hitting(hOrS);
+	
+	cout << "Printing our deck of cards:" << endl;
+	for(int i=0;i<52;i++){
+		cout << "Card number " << i << " is a " 
+			<< deck[i].get_value() << " of " << deck[i].get_suite() << endl;
+	}
 
 	return 0;
 }
