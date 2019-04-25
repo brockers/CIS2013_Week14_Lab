@@ -19,7 +19,7 @@ class Card {
 				case 'A':
 					weight = 11;
 					break;
-				case 'J' || 'Q' || 'K':
+				case 'J' || 'Q' || 'K' || 'T':
 					weight = 10;
 					break;
 				default:
